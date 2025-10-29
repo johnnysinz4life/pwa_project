@@ -22,6 +22,4 @@ app_name = "tasks"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path('admin/', admin.site.urls),
-    path('tasks/', include(("tasks.urls", "tasks"), namespace="tasks")),
 ]
